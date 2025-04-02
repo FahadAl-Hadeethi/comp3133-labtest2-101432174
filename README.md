@@ -1,5 +1,7 @@
 # COMP3133 – Lab Test 2: SpaceX Mission Launch
 
+🌐 **Live Demo:** [https://comp3133-labtest2-101432174.onrender.com](https://comp3133-labtest2-101432174.onrender.com)
+
 ## ✅ Overview
 
 This Angular application displays SpaceX mission data using the public REST API.  
