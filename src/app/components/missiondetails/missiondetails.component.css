@@ -1,0 +1,41 @@
+.details-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .details-card {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffe0b2;
+    padding: 1.5rem;
+  }
+  
+  .banner {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .patch {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  hr {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .back-btn {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  

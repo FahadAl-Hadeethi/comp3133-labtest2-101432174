@@ -1,0 +1,31 @@
+<div class="filter-box">
+    <h3>Mission List</h3>
+    <mat-form-field appearance="outline" class="filter-input">
+      <input
+        matInput
+        type="text"
+        placeholder="Filter by Launch Year"
+        [(ngModel)]="year"
+        (ngModelChange)="yearChange.emit($event)"
+      />
+    </mat-form-field>
+  
+    <div>
+      <p><strong>Launch</strong></p>
+      <mat-radio-group [(ngModel)]="launchStatus" (change)="launchStatusChange.emit(launchStatus)">
+        <mat-radio-button value="success">Successful</mat-radio-button>
+        <mat-radio-button value="failed">Failed</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  
+    <div>
+      <p><strong>Landing</strong></p>
+      <mat-radio-group [(ngModel)]="landingStatus" (change)="landingStatusChange.emit(landingStatus)">
+        <mat-radio-button value="success">Successful</mat-radio-button>
+        <mat-radio-button value="failed">Failed</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  
+    <a class="reset-link" (click)="onReset()">Reset Filters</a>
+  </div>
+  

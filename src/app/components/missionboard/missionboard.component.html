@@ -1,0 +1,11 @@
+<app-mission-filter
+  [year]="year"
+  [launchStatus]="launchStatus"
+  [landingStatus]="landingStatus"
+  (yearChange)="year = $event; filter()"
+  (launchStatusChange)="launchStatus = $event; filter()"
+  (landingStatusChange)="landingStatus = $event; filter()"
+  (resetFilters)="reset()"
+></app-mission-filter>
+
+<app-mission-list [missions]="missions"></app-mission-list>

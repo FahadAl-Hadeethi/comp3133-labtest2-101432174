@@ -1,59 +1,43 @@
-# 101432174LabTest2Comp3133
+# COMP3133 – Lab Test 2: SpaceX Mission Launch
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+## ✅ Overview
 
-## Development server
+This Angular application displays SpaceX mission data using the public REST API.  
+It includes:
 
-To start a local development server, run:
+- Mission list with cards showing full mission info
+- Filter component to search by launch year, launch success, and landing success
+- Dedicated mission details page
+- Angular Material for UI styling
+- Modular component structure (filter, list, details, dashboard)
 
-```bash
-ng serve
-```
+## 🔧 Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 17 (Standalone Components)
+- Angular Material
+- TypeScript
+- HTML/CSS
+- REST API (https://api.spacexdata.com/v3/launches)
+- Git + GitHub
+- Render (deployment)
 
-## Code scaffolding
+## 🚀 Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 🔹 Mission List Component
+Displays each mission with:
+- Patch image
+- Mission name & flight number
+- Launch year, details
+- Rocket name & type
+- External links (article, Wikipedia, video)
 
-```bash
-ng generate component component-name
-```
+### 🔹 Mission Filter Component
+- Filter missions by launch year (live typing)
+- Filter by launch success (successful/failed)
+- Filter by landing success (successful/failed)
+- Reset filters button
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 🔹 Mission Details Page
+- Complete mission information
+- Includes launch site, rocket info, and links
+- Accessible via "View Details" button

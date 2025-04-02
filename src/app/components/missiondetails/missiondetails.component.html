@@ -1,0 +1,41 @@
+<div *ngIf="mission" class="details-wrapper">
+    <mat-card class="details-card">
+      <div class="banner">
+        <img class="patch" [src]="mission.links.mission_patch_small" alt="Mission Patch" />
+        <div class="header-text">
+          <h1>Mission - {{ mission.mission_name }}</h1>
+          <p>Flight #{{ mission.flight_number }} | Year: {{ mission.launch_year }}</p>
+        </div>
+      </div>
+  
+      <hr />
+  
+      <h2>Rocket</h2>
+      <p><strong>Name:</strong> {{ mission.rocket.rocket_name }}</p>
+      <p><strong>Type:</strong> {{ mission.rocket.rocket_type }}</p>
+  
+      <hr />
+  
+      <h2>Launch Site</h2>
+      <p><strong>Name:</strong> {{ mission.launch_site.site_name_long || 'N/A' }}</p>
+  
+      <hr />
+  
+      <h2>Launch Details</h2>
+      <p>{{ mission.details || 'No details available.' }}</p>
+  
+      <hr />
+  
+      <h2>External Links</h2>
+      <p>
+        <a *ngIf="mission.links.article_link" [href]="mission.links.article_link" target="_blank">Article</a> |
+        <a *ngIf="mission.links.wikipedia" [href]="mission.links.wikipedia" target="_blank">Wikipedia</a> |
+        <a *ngIf="mission.links.video_link" [href]="mission.links.video_link" target="_blank">Video</a>
+      </p>
+  
+      <div class="back-btn">
+        <button mat-raised-button color="primary" routerLink="/">Back</button>
+      </div>
+    </mat-card>
+  </div>
+  
